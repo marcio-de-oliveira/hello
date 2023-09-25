@@ -15,10 +15,27 @@
 
 <body>
     <div class="container">
-        <input class="input-task" placeholder="O que tenho que fazer...">
+        <input id="titulo" class="input-task" placeholder="Titulo">
+        <input id="categoria" class="input-task" placeholder="Categoria">
+        <select id="prioridade" class="input-task">
+            <option value="" disabled selected>Prioridade</option>
+            <option value="Baixa">Baixa</option>
+            <option value="Média">Média</option>
+            <option value="Alta">Alta</option>
+        </select>
+        <textarea id="descricao" class="input-task input-textarea" placeholder="Descrição" rows="5"></textarea>
         <button class ="button-add-task">Adicionar</button>
+        <button class ="button-edit-task">Salvar</button>
+        
+        <h1>Tarefas</h1>
+        
+        <ul class="list-tasks"> 
 
-        <ul class="list-tasks">
+        </ul>
+
+        <h1>Tarefas concluidas</h1>
+
+        <ul class="list-tasks-completed">
 
         </ul>
       
